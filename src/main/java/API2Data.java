@@ -47,7 +47,7 @@ public class API2Data {
 		    	   
 		    	   // Inserting data using SQL query
 			       String sql = "insert into  restCountries (capital,Population,region,subregion,eng)values('"+varaiblex.getCapital()[0]+"','"
-		             + varaiblex.getPopulation()+"','"+varaiblex.getRegion()+"','"+varaiblex.getSubregion()+"','"+varaiblex.getLanguages()+"')"; 
+		             + varaiblex.getPopulation()+"','"+varaiblex.getRegion()+"','"+varaiblex.getSubregion()+"','"+varaiblex.getLanguages().getEng()+"')"; 
 			       
 			       System.out.println(sql);
 			       // Connection class object
