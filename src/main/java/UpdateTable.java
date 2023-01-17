@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class UpdateTable {
 
 	//public static void updateById() {
-			public static void main(String[] args) throws IOException, InterruptedException {
+			public static void UpdateFunction()throws IOException, InterruptedException  {
 				String url = "jdbc:mysql://localhost:3306/APIDataBase";
 
 				// Username and password to access DB

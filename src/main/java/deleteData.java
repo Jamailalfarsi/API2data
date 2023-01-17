@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
@@ -5,9 +6,9 @@ import java.util.Scanner;
 
 import com.mysql.jdbc.Statement;
 
-public class deleteData {
+public class DeleteData {
 
-	public static void main(String[] args) {
+	public static void deleteFunction()throws IOException, InterruptedException  {
 		// TODO Auto-generated method stub
 		String url = "jdbc:mysql://localhost:3306/APIDataBase";
 

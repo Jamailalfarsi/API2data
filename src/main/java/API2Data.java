@@ -12,7 +12,7 @@ import com.mysql.jdbc.Statement;
 
 public class API2Data {
 
-	public static void main(String[] args) throws IOException, InterruptedException {
+	public static void getData() throws IOException, InterruptedException {
 		 String jsonUrl = "https://restcountries.com/v3.1/all";
 		        HttpClient client = HttpClient.newHttpClient();
 		        HttpRequest request = HttpRequest.newBuilder()
@@ -38,7 +38,7 @@ public class API2Data {
 		        
 		       for (Atributies varaiblex:fetchGson) {
 		    	   System.out.println("The Capiltal is:"+varaiblex.getCapital()[0]);
-		    	   System.out.println(" population is:"+varaiblex.getPopulation());
+		    	   System.out.println("The population is:"+varaiblex.getPopulation());
 	    	       System.out.println("The Area is:"+varaiblex.getArea());
 		    	   System.out.println("The Region is:"+varaiblex.getRegion());
 		    	   System.out.println("The Subregion is:"+varaiblex.getSubregion());
