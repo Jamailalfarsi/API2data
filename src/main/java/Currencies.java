@@ -1,9 +1,16 @@
 
 public class Currencies {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	XCD XCD ;
 
+	public XCD getXCD() {
+		return XCD;
 	}
+
+	public void setXCD(XCD xCD) {
+		XCD = xCD;
+	}
+
+	
 
 }
