@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
@@ -8,7 +9,7 @@ import java.util.Scanner;
 
 public class ReadData {
 	
-	public static void main(String[] args) {
+	public static void readDataFunction()throws IOException, InterruptedException {
 
 	String url = "jdbc:mysql://localhost:3306/APIDataBase";
 
@@ -18,8 +19,7 @@ public class ReadData {
 	String pass = "root";
 
 	Scanner scanner = new Scanner(System.in);
-	System.out.println("Enter How many you want to read rows from table: ");
-	Integer numberOfRows = scanner.nextInt();
+	
 
 	String sql2 = "SELECT * FROM restCountries";
 
@@ -40,15 +40,15 @@ public class ReadData {
 		// System.out.println(resultSet);
 		while (resultSet.next()) {
 			Integer id = resultSet.getInt("id");
-			String capital = resultSet.getString("capital:");
-			Integer population=resultSet.getInt("population:");
-			String region = resultSet.getString("region:");
-			String subregionregion=resultSet.getString("subregionregion:");
-			String eng =resultSet.getString("eng:");
+			String capital = resultSet.getString("capital");
+			Integer population=resultSet.getInt("population");
+			String region = resultSet.getString("region");
+			String subregion=resultSet.getString("subregion");
+			String eng =resultSet.getString("eng");
 			
 		
-			System.out.println(id + ", " + capital + ", " + population + ", "+ region +", "
-			+ subregionregion+ " ," +eng);
+			System.out.println(id + ", '" + capital + "', " + population + ", '"+ region +"', '"
+			+ subregion+ "' ,'" +eng+"");
 		}
 
 	}
