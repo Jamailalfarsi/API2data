@@ -1,9 +1,19 @@
 
 public class Urd {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	private String official;
+	public String getOfficial() {
+		return official;
 	}
+	public void setOfficial(String official) {
+		this.official = official;
+	}
+	public String getCommon() {
+		return common;
+	}
+	public void setCommon(String common) {
+		this.common = common;
+	}
+	private String common;
 
 }

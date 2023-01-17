@@ -10,4 +10,5 @@ public class NativeName {
 	public void setEng(Eng eng) {
 		this.eng = eng;
 	}
+
 }

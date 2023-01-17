@@ -14,6 +14,20 @@ public class Eng {
 	public void setCommon(String common) {
 		this.common = common;
 	}
+	public String getF() {
+		return f;
+	}
+	public void setF(String f) {
+		this.f = f;
+	}
+	public String getM() {
+		return m;
+	}
+	public void setM(String m) {
+		this.m = m;
+	}
 	private String common;
+	private String f;
+	private String m;
 	
 }

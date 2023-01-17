@@ -1,9 +1,14 @@
 
 public class CapitalInfo {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	private float latlng[];
 
+	public float[] getLatlng() {
+		return latlng;
+	}
+
+	public void setLatlng(float[] latlng) {
+		this.latlng = latlng;
 	}
 
 }

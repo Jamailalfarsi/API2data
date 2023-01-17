@@ -1,35 +1,12 @@
 
-public class atributies {
+public class Atributies {
     Name name;
-	private String tld[];
-	private String cca2;
-	private String ccn3;
-	private String cca3;
-	private String cioc;
-	private boolean independent;
-	private String status;
-	private boolean unMember;
-	Currencies currencies;
-	Idd idd;
-	private String capital[];
-	private String altSpellings[];
-	private String region;
-	private String subregion;
-	Languages languages;
-	Translations translations;
-	private float latlng[];
-	private boolean landlocked;
-	private float area;
-	Demonyms demonyms;
-	private String flag;
-	private Integer population;
-	private String fifa;
-	
-	
-	private String latlng[];
-	private String timezones[];
-	private String continents[];
-	
+	public Name getName() {
+		return name;
+	}
+	public void setName(Name name) {
+		this.name = name;
+	}
 	public String[] getTld() {
 		return tld;
 	}
@@ -78,47 +55,17 @@ public class atributies {
 	public void setUnMember(boolean unMember) {
 		this.unMember = unMember;
 	}
-	public String getRegion() {
-		return region;
+	public Currencies getCurrencies() {
+		return currencies;
 	}
-	public void setRegion(String region) {
-		this.region = region;
+	public void setCurrencies(Currencies currencies) {
+		this.currencies = currencies;
 	}
-	public String getSubregion() {
-		return subregion;
+	public Idd getIdd() {
+		return idd;
 	}
-	public void setSubregion(String subregion) {
-		this.subregion = subregion;
-	}
-	public boolean isLandlocked() {
-		return landlocked;
-	}
-	public void setLandlocked(boolean landlocked) {
-		this.landlocked = landlocked;
-	}
-	public float getArea() {
-		return area;
-	}
-	public void setArea(float area) {
-		this.area = area;
-	}
-	public String getFlag() {
-		return flag;
-	}
-	public void setFlag(String flag) {
-		this.flag = flag;
-	}
-	public Integer getPopulation() {
-		return population;
-	}
-	public void setPopulation(Integer population) {
-		this.population = population;
-	}
-	public String getFifa() {
-		return fifa;
-	}
-	public void setFifa(String fifa) {
-		this.fifa = fifa;
+	public void setIdd(Idd idd) {
+		this.idd = idd;
 	}
 	public String[] getCapital() {
 		return capital;
@@ -132,11 +79,83 @@ public class atributies {
 	public void setAltSpellings(String[] altSpellings) {
 		this.altSpellings = altSpellings;
 	}
-	public String[] getLatlng() {
+	public String getRegion() {
+		return region;
+	}
+	public void setRegion(String region) {
+		this.region = region;
+	}
+	public String getSubregion() {
+		return subregion;
+	}
+	public void setSubregion(String subregion) {
+		this.subregion = subregion;
+	}
+	public Languages getLanguages() {
+		return languages;
+	}
+	public void setLanguages(Languages languages) {
+		this.languages = languages;
+	}
+	public Translations getTranslations() {
+		return translations;
+	}
+	public void setTranslations(Translations translations) {
+		this.translations = translations;
+	}
+	public float[] getLatlng() {
 		return latlng;
 	}
-	public void setLatlng(String[] latlng) {
+	public void setLatlng(float[] latlng) {
 		this.latlng = latlng;
+	}
+	public boolean isLandlocked() {
+		return landlocked;
+	}
+	public void setLandlocked(boolean landlocked) {
+		this.landlocked = landlocked;
+	}
+	public float getArea() {
+		return area;
+	}
+	public void setArea(float area) {
+		this.area = area;
+	}
+	public Demonyms getDemonyms() {
+		return demonyms;
+	}
+	public void setDemonyms(Demonyms demonyms) {
+		this.demonyms = demonyms;
+	}
+	public String getFlag() {
+		return flag;
+	}
+	public void setFlag(String flag) {
+		this.flag = flag;
+	}
+	public Maps getMaps() {
+		return maps;
+	}
+	public void setMaps(Maps maps) {
+		this.maps = maps;
+	}
+	public Integer getPopulation() {
+		return population;
+	}
+	public void setPopulation(Integer population) {
+		this.population = population;
+	}
+	public String getFifa() {
+		return fifa;
+	}
+	public void setFifa(String fifa) {
+		this.fifa = fifa;
+	}
+	public Car getCar() {
+		return car;
+	}
+	public void setCar(Car car) {
+		this.car = car;
 	}
 	public String[] getTimezones() {
 		return timezones;
@@ -150,14 +169,61 @@ public class atributies {
 	public void setContinents(String[] continents) {
 		this.continents = continents;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public Flags getFlags() {
+		return flags;
+	}
+	public void setFlags(Flags flags) {
+		this.flags = flags;
+	}
+	public CoatOfArms getCoatOfArms() {
+		return coatOfArms;
+	}
+	public void setCoatOfArms(CoatOfArms coatOfArms) {
+		this.coatOfArms = coatOfArms;
+	}
+	public String getStartOfWeek() {
+		return startOfWeek;
+	}
+	public void setStartOfWeek(String startOfWeek) {
+		this.startOfWeek = startOfWeek;
+	}
+	public CapitalInfo getCapitalInfo() {
+		return capitalInfo;
+	}
+	public void setCapitalInfo(CapitalInfo capitalInfo) {
+		this.capitalInfo = capitalInfo;
+	}
+	private String tld[];
+	private String cca2;
+	private String ccn3;
+	private String cca3;
+	private String cioc;
+	private boolean independent;
+	private String status;
+	private boolean unMember;
+	Currencies currencies;
+	Idd idd;
+	private String capital[];
+	private String altSpellings[];
+	private String region;
+	private String subregion;
+	Languages languages;
+	Translations translations;
+	private float latlng[];
+	private boolean landlocked;
+	private float area;
+	Demonyms demonyms;
+	private String flag;
+	Maps maps;
+	private Integer population;
+	private String fifa;
+	Car car;
+	private String timezones[];
+	private String continents[];
+	Flags flags;
+	CoatOfArms coatOfArms;
+	private String startOfWeek;
+	CapitalInfo capitalInfo;
+		
 
 }

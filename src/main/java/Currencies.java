@@ -11,6 +11,8 @@ public class Currencies {
 		XCD = xCD;
 	}
 
+
+
 	
 
 }

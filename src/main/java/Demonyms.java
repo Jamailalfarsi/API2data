@@ -1,9 +1,18 @@
 
 public class Demonyms {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	Eng eng;
+	public Eng getEng() {
+		return eng;
 	}
-
+	public void setEng(Eng eng) {
+		this.eng = eng;
+	}
+	public Fra getFra() {
+		return fra;
+	}
+	public void setFra(Fra fra) {
+		this.fra = fra;
+	}
+	Fra fra;
 }
