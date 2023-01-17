@@ -18,7 +18,7 @@ public class MainFunction {
 		// TODO Auto-generated method stub
 		
 		boolean MenuExit = true;
-		boolean subMenuExit = true;
+		
 		
 		while( MenuExit ) {
 			Scanner sc = new Scanner(System.in);
